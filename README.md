@@ -1,4 +1,4 @@
-# JavaScriptGame
+# Text Adventure Game
 
 This is a text based adventure game about doing dungions and unlocking new items/aumor. 
 When you unlock more aumor, you are able to unlock new dungions and unlock new items.
