@@ -6,4 +6,4 @@ Thats literaly what the game is. A simple, texted basied adventure game.
 
 # haha funnny dog gif
 
-![]()
+![](https://github.com/MagicPhoenixNSN/JavaScriptGame/blob/master/GIFs/DogGif.gif)
