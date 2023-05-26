@@ -43,6 +43,27 @@ function submitClicked() {
             if (aumor.includes("Rusty-Pants")) {
                 if (aumor.includes("Rusty-Helmet")) {
                     alert("second dugion availbal!")
+                    document.getElementById("computerResponseText").innerHTML = "Adventure Started";
+                    randomNumber = Math.ceil(Math.random() * 6);
+                    if (randomNumber == 1) {
+                        alert('You find a bug and touch it. It jumps on your face and you pass out from fear. RIP')
+                    }
+                    else if (randomNumber == 2) {
+                        alert('You walk into some spooky smoke. You inhale and relize the smoke color is green. You died to poinson. RIP')
+                    }
+                    else if (randomNumber == 3) {
+                        alert('You find a a room; Its dark; you need something to light it up. A torch is not enough. Maybe something brigherter though?')
+                        
+                    }
+                    else if (randomNumber == 4) {
+                        alert('You find a bug and touch it. It jumps on your face and you pass out from fear. RIP')
+                    }
+                    else if (randomNumber == 5) {
+                        alert('You find a bug and touch it. It jumps on your face and you pass out from fear. RIP')
+                    }
+                    else if (randomNumber == 6) {
+                        alert('You find a bug and touch it. It jumps on your face and you pass out from fear. RIP')
+                    }
                 }
             }
         }

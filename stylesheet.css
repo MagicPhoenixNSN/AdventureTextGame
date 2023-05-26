@@ -1,0 +1,143 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 1fr 2fr 0.4fr;
+    grid-template-areas:
+      "main aside"
+      "main aside"
+      "footer aside";
+  }
+  /*header {
+    grid-area: header;
+    background-color: #125399;
+
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+  }
+
+  .headerItems {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    
+  }
+  .headerButtonStyle {
+    outline: none;
+    border: none;
+    background-color: #1575a5;
+    height: 50px;
+  } */
+  main {
+    grid-area: main;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 7vh;
+    color: white;
+  }
+
+  .MainCommandsClass h3 {
+    margin: 0%;
+    padding-top: 4rem;
+  }
+
+  .PlayerCommands {
+    padding-top: 2rem;
+  }
+
+  .PlayerCommands p {
+    font-size: 20px;
+    margin: 0%;
+  }
+
+  .GameResponse {
+    padding-top: 2rem;
+  }
+
+  .subCommandsClass {
+    padding-top: 2rem;
+  }
+  .subCommandsClass h3 {
+    margin: 0%;
+  }
+
+  aside {
+    grid-area: aside;
+    background-color: rgb(33, 33, 33);
+  }
+  .asideItems {
+
+  }
+  .asideItems p {
+    font-size: 20px;
+    color: white;
+  }
+
+  .class1 {
+    display: grid;
+    justify-content: space-around;
+    padding: 3rem;
+    
+  }
+  .class2 {
+    display: grid;
+    justify-content: space-around;
+    padding: 3rem;
+  }
+
+  .class3 {
+    display: grid;
+    justify-content: space-around;
+    padding: 3rem;
+  }
+  .headerButtonStyle {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 20px 20px;
+  }
+
+  .headerButtonStyle:hover {
+    background-color: grey;
+  }
+
+  
+
+
+  footer {
+    display: flex;
+    grid-area: footer;
+    background-color: rgb(70, 70, 70);
+    justify-content: space-evenly;
+  }
+  
+  footer div {
+    flex-direction: column;
+  }
+
+
+  footer div p {
+    margin: 0%;
+  }
+
+
+body {
+    background-color: black;
+}
+
+.HeaderTextTUT {
+    color: white;
+    text-align: center;
+}
+
+.TutorialText {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}

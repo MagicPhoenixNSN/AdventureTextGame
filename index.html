@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>Text Adventure Game</title>
-    </head>
-    <header>
-        <link href="./stylesheet.css" rel="stylesheet">
-    </header>
-    <body>
-        <h1> Adventure Text Game</h1>
-        <p class="PlayerCommands"> Commands: <br>
-            Key 1: Explore Cave <br>
-            Key 2: Explore Mistirous Cave |BETA|<br>
-            Key 3: Exsplore Dungion |NA|<br>
-            Key 4: Inventory/Money <br>
-            Key 5: Store<br>
-			<b>For buying Items from shop</b>, input the <br>
-			two cappital letters in the perenthises <br>
-			in the "Sub Options" Text bar.<br>
-			<b>For Equiping/Using items, </b> type the <br>
-			number that corrilates with the item in<br>
-			the list. EX inventory: Torch,Rusty-Chestplate <br>
-			if I want to equip/use the torch, I would <br>
-			type in "1" in the sub options menu. <br>
-			if I want to equip the aumor, I type "2"<br>
-			<b> When opening chests,</b> make sure <br>
-			to use the chest, not the key. Make <br>
-			sure you have both the key and the chest
-			
-			
-        </p>
+    <div class="container">
+        <header>
+            <link href="./stylesheet.css" rel="stylesheet">
+            <title>Text Adventure Game</title>
+            
+        </header>
+        <main>
+            <div class="PlayerCommands">
+                <p> Commands: <br></p>
+                <p>Key 1: Explore Cave </p>
+                <p>Key 2: Explore Mistirous Cave |BETA|</p>
+                <p>Key 3: Exsplore Dungion |NA|</p>
+                <p>Key 4: Inventory/Money </p>
+                <p>Key 5: Store</p>   
+            </div>
+            
+            <div class="MainCommandsClass">
+                <h3>Main Commands</h3>
+                <input type="text" id="playerInputTextBox">
+                <button onclick="submitClicked()"> Submit </button>
+            </div>
+            
+    
+            <p class="GameResponse" id="computerResponseText"> Responses to your commands<br> will be shown here</p>
+    
+           
+            <div class="subCommandsClass"> 
+                <h3>Sub options:</h3>
+                <input type="text" id="subPlayerInputTextBox">
+               <button onclick="subSubmitClicked()">Submit</button>
+            </div>
+            
+    
+            
+    
+            <script src="./script.js"></script>
 
-        <input type="text" id="playerInputTextBox">
-        <button onclick="submitClicked()"> Submit </button>
+        </main>
 
-        <p class="GameResponse" id="computerResponseText"> Responses to your commands will be shown here</p>
+        <aside> 
+            <div class="asideItems">
+                <p style="text-align: center;color: white;font-weight: 800;font-size: 30px;"> Adventure Text Game</p>
+                <div class="ButtonsClassAside">
+                    <a class="class1" href="./index.html"><button class="headerButtonStyle">Play Game</button></a> <br>
+                    <a class="class2" href="./howtoplay.html"><button class="headerButtonStyle">Infomation/tutorial</button></a>
+                    <p class="class3">Made by MagicPhoenixNSN  <br> https://github.com/MagicPhoenixNSN</p>
+                </div>
+                
+            </div>
+        </aside>
+        <footer>
+            <div>
+                <b>Version: 0.1 (Content)</b> 
+                <p>-First Build </p>
+                <p>-First Dungion </p>
+                <p>-Inventory System </p>
+                <p>-Beta Shop </p>
+            </div>
+       
+            <div>
+                <b>Version: 0.15 (content)</b> 
+                <p>-Fixed issue with inventory (hopfully) </p>
+                <p>-Second dungion is startable</p>
+                <p>-Inproved shop </p>
+                <p>-Chest opening system </p>
+            </div>
 
-        <br> <br>
-        Sub options:<input type="text" id="subPlayerInputTextBox">
-        <button onclick="subSubmitClicked()">Submit</button>
-
-        <hr>
-
-        <b>Version: 0.1</b> <br>
-        -First Build <br>
-        -First Dungion <br>
-        -Inventory System <br>
-        -Beta Shop <br>
-
-        <b>Version: 0.15</b> <br>
-        -Fixed issue with inventory (hopfully) <br>
-        -Second dungion is startable <br>
-        -Inproved shop <br>
-        -Chest opening system <br>
-
-        <script src="./script.js"></script>
-    </body>
+            <div>
+                <b>Version: 0.2 (Visual)</b>
+                <p>-Made website look ok</p>
+                <p>-I hate css</p>
+                <p>-Made a "How to Play" page</p>
+            </div>
+          
+        </footer>
 </html>
