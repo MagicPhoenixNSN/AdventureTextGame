@@ -1,5 +1,6 @@
 let gold = 100
 let invotoryPlayerNumber = 0
+let inventoryText = document.getElementById("InventoryText")
 const aumor = ["Helmet(None)", "Chestplate(None)", "Pants(None)"]
 const items = ["Torch", "BetaItem", "Bronze-Key"]
 
@@ -8,8 +9,10 @@ function submitClicked() {
     if (textBox == "1") {
         document.getElementById("computerResponseText").innerHTML = "Adventure Started";
         let randomNumber = Math.ceil(Math.random() * 3);
+        document.getElementById("computerResponseText").innerHTML = "You have entered the first Dungion!"
         if (randomNumber == 1) {
             alert("You Enter the cave. You start to esplore. You fine a small room, with a chest inside. You find an item!")
+
             randomNumber = Math.ceil(Math.random() * 4);
             if (randomNumber == 1) {
                 alert(" The Chest contained 10 gold!")
@@ -25,6 +28,7 @@ function submitClicked() {
             }
             if (randomNumber == 4) {
                 alert("The Chest contained a bronze key!")
+
                 items.push("Bronze-Key");
             }
         }
@@ -35,7 +39,7 @@ function submitClicked() {
             alert("You Enter the cave. You find a some gold sitting on the ground.")
             randomNumber = Math.ceil(Math.random() * 7);
             gold = gold + randomNumber
-            alert(gold)
+            alert("Gold: " + gold)
         }
     }
     else if (textBox == "2"){
@@ -53,13 +57,18 @@ function submitClicked() {
                     }
                     else if (randomNumber == 3) {
                         alert('You find a a room; Its dark; you need something to light it up. A torch is not enough. Maybe something brigherter though?')
-                        
+                        if (items.includes("Lantern")) {
+                            alert("You brighten up the room with your lantern. You find great mosaiacs on the wall. You push behind a wall and find.. (coming soon)")
+                        }
                     }
                     else if (randomNumber == 4) {
-                        alert('You find a bug and touch it. It jumps on your face and you pass out from fear. RIP')
+                        alert('You find 100 gold!')
+                        gold += 100
                     }
                     else if (randomNumber == 5) {
-                        alert('You find a bug and touch it. It jumps on your face and you pass out from fear. RIP')
+                        alert('You find a chest in a room and deside on opening it. Jacpot! You find:')
+                        randomNumber = Math.ceil(Math.random() * 3);
+
                     }
                     else if (randomNumber == 6) {
                         alert('You find a bug and touch it. It jumps on your face and you pass out from fear. RIP')
@@ -91,8 +100,7 @@ function submitClicked() {
 function subSubmitClicked() {
     const subTextBox = document.getElementById("subPlayerInputTextBox").value;
     invotoryPlayerNumber = subTextBox - 1
-    alert(invotoryPlayerNumber)
-    alert(items[invotoryPlayerNumber])
+ 
     if (items[invotoryPlayerNumber] == "Rusty-Helmet") {
         alert('correct')
         items.splice(invotoryPlayerNumber, 1)
@@ -167,3 +175,11 @@ function subSubmitClicked() {
 	}
     
 }
+
+setInterval(function(){
+    document.getElementById("InventoryText").innerHTML =  "Inventory: " + items.toString();
+}, 10);
+
+setInterval(function(){
+    document.getElementById("GoldText").innerHTML =  "Gold: " + gold
+}, 10);

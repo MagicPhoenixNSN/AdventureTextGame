@@ -92,7 +92,7 @@
   .class3 {
     display: grid;
     justify-content: space-around;
-    padding: 3rem;
+    padding: 2rem;
   }
   .headerButtonStyle {
     outline: none;
@@ -140,4 +140,5 @@ body {
     align-content: center;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
